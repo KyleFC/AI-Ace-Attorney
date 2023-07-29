@@ -22,7 +22,7 @@ function PromptInput({ onFormSubmit }) {
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
-  const [script, setScript] = useState(null);
+  const [videoUrl, setVideoUrl] = useState(null);
 
   const handleFormSubmit = (topic) => {
     setIsLoading(true);
@@ -36,7 +36,7 @@ function App() {
     .then(response => response.json())
     .then(data => {
       setIsLoading(false);
-      setScript(data.output);
+      setVideoUrl('http://localhost:5000/video');
     });
   };
 
@@ -44,10 +44,8 @@ function App() {
     <div>
       <PromptInput onFormSubmit={handleFormSubmit} />
       {isLoading && <p>Loading...</p>}
-      {script && <p>{script}</p>}
+      {videoUrl && <video src={videoUrl} controls />}
     </div>
   );
 }
-
-
 export default App;
