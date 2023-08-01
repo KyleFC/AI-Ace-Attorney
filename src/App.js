@@ -41,10 +41,10 @@ function App() {
   };
 
   return (
-    <div>
+    <div style={{maxWidth: "70%"}}>
       <PromptInput onFormSubmit={handleFormSubmit} />
       {isLoading && <p>Loading...</p>}
-      {videoUrl && <video src={videoUrl} controls />}
+      {videoUrl && <video style={{width: "100%", height: "auto"}} src={videoUrl} controls />}
     </div>
   );
 }
