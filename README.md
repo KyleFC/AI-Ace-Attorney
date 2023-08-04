@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Argument Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Argument Generator is a web application that generates a video of Phoenix and Miles, two characters from the Ace Attorney series, engaging in a debate on a user-provided topic. The video includes background music and sound effects for exclamations. The project is currently in its early stages, with a simple user interface and some known bugs.
 
-## Available Scripts
+## Features
+- User can input a topic for the argument.
+- The application generates a video of Phoenix and Miles debating the topic.
+- The video includes background music and sound effects for exclamations.
 
-In the project directory, you can run:
 
-### `npm start`
+## Usage
+To run the project, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+0. Meet the requirements for python. Currently, the requirements file is incomplete. You will also need to install MagickWand.
+1. Start the Flask server: `python app.py`
+2. Start the React application: `npm start`
+3. Open a web browser and navigate to `http://localhost:3000`
+4. Enter a topic in the input field and click "Submit"
+5. Wait for the video to be generated and displayed on the page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Known Issues
+- The user interface is currently very basic and could be improved.
+- There are some known bugs that can occur during video generation.
 
-### `npm test`
+## Future Work
+- Improve the user interface to provide a better user experience.
+- Fix known bugs and improve the robustness of the video generation process.
+- Add more characters and sound effects to the video.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the terms of the MIT license.

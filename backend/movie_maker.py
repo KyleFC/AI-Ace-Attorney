@@ -19,8 +19,8 @@ def movie_maker(topic):
         'TAKE THAT': 'assets/takethat.png',
         'HOLD IT!': 'assets/holdit.png',
         'HOLD IT': 'assets/holdit.png'
-
     }
+    
     clips = []
     audio_clips = []
     background_audio = mp.AudioFileClip('assets/ost2.mp3')
